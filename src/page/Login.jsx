@@ -20,7 +20,11 @@ const Login = () => {
     <Background>
       <Wrapper>
 
-        <Logo src={logo} />
+        <ImageContainer>
+          <Logo src={logo} />
+        </ImageContainer>
+
+
         <LoginForm
           onSubmit={handleSubmit(data => {
             console.log(data); // data 출력
@@ -68,11 +72,20 @@ const Background = styled.div`
 
 const Wrapper = styled.div`
   box-sizing : border-box;
-  padding : 40px 30px;
+  padding : 0 30px 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  min-height : 600px;
-  min-width: 500px;
   border-radius : 12px;
+  
+  @media (max-width: 680px) {
+    width : 90%;
+    margin : 150px;
+  }
+`
+
+const ImageContainer = styled.div`
+  display : flex;
+  justify-content : center;
+  align-items : center;
 `
 
 const LoginForm = styled.form`
