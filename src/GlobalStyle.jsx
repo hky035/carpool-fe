@@ -5,6 +5,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: "Noto Sans KR","Pretendard", sans-serif;
         color : #111;
         --main-color: #153974;
+        --warning-color: #F42E3D;
     }
 `
 
