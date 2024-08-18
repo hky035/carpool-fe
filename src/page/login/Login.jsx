@@ -94,7 +94,7 @@ const LoginForm = styled.form`
 
 const CustomInput = styled(Input)`
   margin : 10px 0 20px;
-  background-color : #fbfbfb;
+  background-color : #fdfdfd;
 `
 
 const ButtonContainer = styled.div`
@@ -129,8 +129,9 @@ const GoToRegister = styled.div`
 
   &:hover{
     color : #111;
+    font-weight : bold;
   }
 `
 
 
-export default Login
+export default Login;

@@ -12,17 +12,20 @@ const Label = ({ text, isEssential }) => {
 }
 
 const Wrapper = styled.div`
-    width : 100%;
+    height : 100%;
     font-size : 20px;
     font-weight : 600;
+    display : flex;
+    align-items : center;
 `
 
 
 const Tag = styled.label`
 `
 
-const Essential = styled.span`
+const Essential = styled.div`
     color : red;
+    text-align : center;
 `
 
 export default Label;
