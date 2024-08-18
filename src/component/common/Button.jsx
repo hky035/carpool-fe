@@ -5,7 +5,8 @@ const Button = styled.button`
     border-radius : 6px;
     color : #fff;
     font-size : 20px;
-    font-weight : 600;
+    font-family: "Noto Sans KR";
+    font-weight : 500;
     background-color : var(--main-color);
     box-sizing : border-box;
     padding : 10px 0;
