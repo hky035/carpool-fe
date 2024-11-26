@@ -39,6 +39,7 @@ const Wrapper = styled.div`
 
 const MenuContainer = styled.div`
     padding : 10px;
+    cursor: pointer;
 `
 
 export default Menubar
