@@ -31,6 +31,7 @@ const Wrapper = styled.div`
 
 const Header = styled.div`
     height : 60px;
+    min-height : 60px;
     box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 5px 0px;
     display : flex;
     align-items : center;
@@ -43,11 +44,19 @@ const Header = styled.div`
 
 const Content = styled.div`
     flex-grow : 1;
+    overflow-y : auto;
+    -ms-overflow-style: none;
+
+    &::-webkit-scrollbar {
+      display : none;
+    }
 `
 
 const Footer = styled.div`
     height : 70px;
+    min-height : 70px;
     box-shadow: rgba(99, 99, 99, 0.1) 0px -2px 5px 0px;
+    background-color : inherit;
 `
 
 export default Layout
