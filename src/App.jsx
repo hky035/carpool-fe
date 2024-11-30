@@ -18,6 +18,7 @@ function App() {
 
           <Route path="/" element={ <Layout/> }>
             <Route path="" element={<Main />} />
+            <Route path="/login" element={<Login />} />
           </Route>
 
           
